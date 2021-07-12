@@ -1,0 +1,13 @@
+{
+  "name": "@my-design-system/my-design-system-core",
+  "version": "1.0.0",
+  "description": "core stuff",
+  "main": "index.js",
+  "repository": "tbc-git",
+  "author": "Ricky H",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  }
+}

@@ -1,0 +1,289 @@
+#bio_ep_bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #273240;
+  opacity: 1;
+  z-index: 800;
+}
+
+#bio_ep {
+  display: none;
+  position: fixed;
+  max-width: 1120px;
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+}
+
+#bio_ep_close, #cta-close {
+  position: absolute;
+
+  margin: -8px 0 0 -12px;
+  width: 23px;
+  height: 23px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #5c5c5c;
+  cursor: pointer;
+  z-index: 1004;
+}
+
+#bio_ep_close{
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  position: absolute;
+}
+
+.cta-content {
+  text-align: center;
+}
+
+.cta-content .acclogo {
+  margin: auto;
+  display: block;
+  width: 33%;
+}
+
+.cta-content .acclogo svg{
+  margin: auto;
+}
+
+
+/* Divi CTA Section Expanding on Scroll */
+/* hide the horizontal scrollbar when CTA section expands */
+/*https://www.divicio.us/tutorials/free-download-divi-cta-section-expanding-on-scroll/*/
+
+/*#cta{*/
+/*  top: 30%;*/
+/*  position: relative;*/
+/*}*/
+.ctaContainer{
+  height: auto;
+  min-height: 380px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .ctaContainer{
+    height: auto;
+    min-height: 340px;
+  }
+
+}
+
+.cta-highlightable h2{
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: 800;
+  margin: 0 4rem;
+}
+.cta-highlightable p{
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+#et-main-area {
+  overflow-x: hidden;
+}
+/* CTA section */
+.cta-highlightable {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 5;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+
+  background-position: 50%;
+  background-size: 100%;
+  background-size: cover;
+}
+
+.cta-highlightable .off {
+
+}
+.cta-highlightable .on {
+
+}
+/* expanded CTA section */
+.cta-highlightable.cta-highlight-true {
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+
+}
+
+.cta-highlightable .cta_card_featured_svg svg {
+  opacity: 0.2;
+}
+
+/* the row with CTA info */
+.cta_card_featured {
+
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+
+  text-align: center;
+  margin: 0;
+  padding-top: 60px;
+  padding-right: 32px;
+  padding-bottom: 65px;
+  padding-left: 32px;
+
+
+  background: radial-gradient(circle at top left, #4a42ec 0%, #3a1567 100%);
+  background: -webkit-radial-gradient( top left,circle, #023E88 0%, #00224B 100%);
+  background: -o-radial-gradient(top left, circle, #023E88 0%, #00224B 100%);
+  background: radial-gradient(circle at top left, #023E88 0%, #00224B 100%);
+  /*background: #023388;*/
+
+  /*enable the below dropshadow only when banner is highlighted*/
+  /*-webkit-box-shadow: 0 48px 48px -32px rgba(23, 16, 159, 0.2),*/
+  /*0 96px 96px -64px rgba(23, 16, 159, 0.4);*/
+  /*box-shadow: 0 48px 48px -32px rgba(23, 16, 159, 0.2),*/
+  /*0 96px 96px -64px rgba(23, 16, 159, 0.4);*/
+  overflow: visible !important;
+  -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: unset;
+}
+
+.cta_card_featured .cta-content{
+  max-width: 996px;
+  margin: auto;
+}
+/* expanded row with CTA info */
+.cta-highlight-true .cta_card_featured {
+  position: relative;
+  width: 90%;
+  max-width: 1120px;
+  border-radius: 8px 8px 8px 8px;
+  z-index: 999;
+
+  /*margin-top: 25vh;*/
+  margin-left: auto!important;
+  margin-right: auto!important;
+
+  -webkit-box-shadow: 0 48px 48px -32px rgba(23, 16, 159, 0.2),
+  0 96px 96px -64px rgba(3, 2, 20, 0.6);
+  box-shadow: 0 48px 48px -32px rgba(23, 16, 159, 0.2),
+  0 96px 96px -64px rgba(3, 2, 20, 0.6);
+
+  transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*the close button in the corner*/
+#cta-close{
+  display: none;
+}
+
+.cta-highlight-true #cta-close{
+  display: block;
+}
+
+/*.cta_card_featured button {*/
+/*  outline: 0;*/
+/*  display: inline-flex;*/
+/*  align-items: center;*/
+/*  justify-content: space-between;*/
+/*  border: 0;*/
+/*  border-radius: 5px;*/
+/*  !*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*!*/
+/*  box-sizing: border-box;*/
+/*  padding: 15px 30px;*/
+/*  color: #fff;*/
+/*  font-family: montserrat, sans-serif;*/
+/*  font-weight: 600;*/
+/*  letter-spacing: 1px;*/
+/*  text-transform: uppercase;*/
+/*  overflow: hidden;*/
+/*  cursor: pointer;*/
+/*  background-color: #0069b4;*/
+/*  transition: all 100ms ease-in-out;*/
+/*}*/
+
+.cta_card_featured button:hover{
+  padding: 17px 32px;
+  border-radius: 2px;
+  margin: -2px;
+  /*font-size: 1.2rem;*/
+  transition: all 100ms ease-in-out;
+}
+
+
+
+
+
+/* CTA background overlay */
+.cta-highlighted-overlay {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  z-index: 4;
+  background-color: #273240;
+
+}
+/* expanded CTA background overlay */
+.cta-highlightable.cta-highlight-true  .cta-highlighted-overlay {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /*z-index: 800;*/
+}
+.et_pb_section{
+  background-color: transparent;
+}
+/* Divi CTA Section Expanding on Scroll  */
+
+body footer, body header{
+  visibility: visible;
+  transition: transform 500ms ease-in-out;
+}
+body.cta-highlight-true-hidden footer, body.cta-highlight-true-hidden header{
+  visibility: hidden;
+  transition: transform 500ms ease-in-out;
+}
