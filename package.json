@@ -11,6 +11,20 @@
     "packages/*"
   ],
   "devDependencies": {
+    "gatsby": "^3.9.0",
+    "gatsby-link": "^3.9.0",
+    "gatsby-plugin-gatsby-cloud": "^2.9.0",
+    "gatsby-plugin-image": "^1.9.0",
+    "gatsby-plugin-manifest": "^3.9.0",
+    "gatsby-plugin-offline": "^4.9.0",
+    "gatsby-plugin-react-helmet": "^4.9.0",
+    "gatsby-plugin-sharp": "^3.9.0",
+    "gatsby-react-router-scroll": "^4.9.0",
+    "gatsby-source-filesystem": "^3.9.0",
+    "gatsby-transformer-sharp": "^3.9.0",
+    "prop-types": "^15.7.2",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "@babel/core": "^7.14.6",
     "@storybook/addon-actions": "^6.3.4",
     "@storybook/addon-essentials": "^6.3.4",
@@ -21,7 +35,8 @@
     "babel-loader": "^8.2.2",
     "jest": "^27.0.6",
     "lerna": "^4.0.0",
-    "storybook": "^6.3.4"
+    "storybook": "^6.3.4",
+    "gatsby-plugin-styled-components": "^3.3.14"
   },
   "scripts": {
     "compile": "lerna run compile",
