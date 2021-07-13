@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import { Button } from "stories/button/Button";
+import { Acclogo } from "stories/acclogo/Acclogo";
 
 import "fontsource-montserrat/300.css" // All styles included.
 import "fontsource-montserrat/400.css" // All styles included.
@@ -30,6 +31,7 @@ const IndexPage = () => (
       style={{ marginBottom: `1.45rem` }}
     />
     <p>
+        <Acclogo />
         <Button />
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>

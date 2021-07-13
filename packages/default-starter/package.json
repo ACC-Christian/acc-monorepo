@@ -7,8 +7,8 @@
   "main": "index.js",
   "dependencies": {
     "@my-design-system/my-design-system-core": "^1.0.0",
-    "stories": "^1.0.0",
     "dotenv": "^10.0.0",
+    "fontsource-montserrat": "^3.0.9",
     "gatsby": "^3.9.0",
     "gatsby-plugin-gatsby-cloud": "^2.9.0",
     "gatsby-plugin-image": "^1.9.0",
@@ -16,14 +16,15 @@
     "gatsby-plugin-offline": "^4.9.0",
     "gatsby-plugin-react-helmet": "^4.9.0",
     "gatsby-plugin-sharp": "^3.9.0",
+    "gatsby-plugin-styled-components": "^4.9.0",
     "gatsby-source-filesystem": "^3.9.0",
     "gatsby-transformer-sharp": "^3.9.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "fontsource-montserrat": "^3.0.9"
-   },
+    "stories": "^1.0.0"
+  },
   "devDependencies": {
     "prettier": "2.3.2"
   },
