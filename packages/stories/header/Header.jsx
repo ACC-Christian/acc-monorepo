@@ -2,34 +2,30 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Button } from '../button/Button';
-import { Acclogo } from '../acclogo/acclogo';
+import { AccLogo } from '../AccLogo/AccLogo';
 import './header.css';
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
+export const Header = ({ user, onLogin, onLogout, onCreateAccount, buttonLabelOne, buttonLabelTwo }) => (
   <header>
     <div className="wrapper">
-      <Acclogo campus={'Singleton'} />
+      <AccLogo campus={'Singleton'} />
       <div>
-        {user ? (
-          <Button size="small" onClick={onLogout} label="Log out" />
-        ) : (
-          <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
-          </>
-        )}
+        <Button primary size="large" label={buttonLabelOne} />
+        <Button secondary size="large" label={buttonLabelTwo} />
+        {/*<Button secondary size="large" href={`https://www.acc.edu.au/${campus}/principals-tour.html`} label={buttonLabel} />*/}
       </div>
     </div>
   </header>
 );
 
-Header.propTypes = {
-  user: PropTypes.shape({}),
-  onLogin: PropTypes.func.isRequired,
-  onLogout: PropTypes.func.isRequired,
-  onCreateAccount: PropTypes.func.isRequired,
-};
+// Header.propTypes = {
+//   user: PropTypes.shape({}),
+//   onLogin: PropTypes.func.isRequired,
+//   onLogout: PropTypes.func.isRequired,
+//   onCreateAccount: PropTypes.func.isRequired,
+// };
 
 Header.defaultProps = {
-  user: null,
+  buttonLabelOne: 'Dont forget to set the label on the page where the component us being used',
+  buttonLabelTwo: 'Dont forget to set the label on the page where the component us being used',
 };

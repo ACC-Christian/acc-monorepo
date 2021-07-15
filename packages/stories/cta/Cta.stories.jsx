@@ -10,6 +10,6 @@ export default {
     title: 'Components/CTA',
 }
 
-export const Primary = () => <Cta campus="sdfsdf" copy="dskndlkgdd" color="red" />;
+export const Primary = () => <Cta campus="sdfsdf" mainText="this is written in the story" color="red" label="this is button text" />;
 // export const Secondary = () => <Cta campus="sfsdfs" copy="sadasdasdskndlkgdd" color="green" />;
 // export const Tertiary = () => <Cta campus="sdfsfsf" copy="jjghjghdskndlkgdd" color="blue" />;

@@ -1,20 +1,20 @@
 import React from 'react';
 
 import styled from "styled-components"
-import { Acclogo } from './acclogo';
+import { AccLogo } from './AccLogo';
 
 const Logo = styled.svg`
 `;
 
 export default {
-    title: 'Visuals/Acclogo',
+    title: 'Visuals/AccLogo',
     component: Logo,
     argTypes: {
         color: { control: 'color' },
     },
 };
 
-const Template = (args) => <Acclogo {...args} />;
+const Template = (args) => <AccLogo {...args} />;
 
 export const Campus = Template.bind({});
 Campus.args = {
