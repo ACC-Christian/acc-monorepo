@@ -1,10 +1,7 @@
 import React from 'react'
 import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-// import get from 'lodash/get'
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-
-// import Content from "./content.md"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import "fontsource-montserrat/300.css" // All styles included.
 import "fontsource-montserrat/400.css" // All styles included.
@@ -44,7 +41,7 @@ const IndexPage = ( { data } ) => (
                 <AccLogo color={'magenta'} campus={'ricky'}/>
                 <Button label="this is a button"/>
                 {/*<AcademicImprovement bodyCopy={data.markdownRemark.html}/>*/}
-                <AcademicImprovement bodyCopy={data.academicImprovementContent.html} sideImage={data.academicImprovementImage.childImageSharp.gatsbyImageData}/>
+                <AcademicImprovement bodyCopy={data.academicImprovementContent.body} sideImage={data.academicImprovementImage.childImageSharp.gatsbyImageData}/>
                 <Cta mainText="this is written in the pages" buttonLabel="click here now"/>
               <Link to="/page-2/">Go to page 2</Link> <br/>
               <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
@@ -58,9 +55,8 @@ export default IndexPage
 
 export const query = graphql`
  query {
-      academicImprovementContent: markdownRemark(headings: {elemMatch: {value: {in: "ACADEMIC IMPROVEMENT"}}}) {
-        html
-        fileAbsolutePath
+      academicImprovementContent: mdx(headings: {elemMatch: {value: {eq: "ACADEMIC IMPROVEMENT"}}}) {
+        body
       }
       academicImprovementImage: file(name: {eq: "academicImprovementPic"}) {
         childImageSharp {

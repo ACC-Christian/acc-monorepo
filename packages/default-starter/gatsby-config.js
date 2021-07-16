@@ -1,9 +1,3 @@
-const activeEnv = process.env.ACTIVE_ENV | 'development'
-
-require('dotenv').config({
-  path: `.env.${activeEnv}`,
-})
-
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -17,28 +11,11 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/content`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `content`,
         path: `${__dirname}/src/content`,
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        // Footnotes mode (default: true)
-        footnotes: true,
-        // GitHub Flavored Markdown mode (default: true)
-        gfm: true,
-        // Plugins configs
-        plugins: [],
-      },
-    },
+    `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
