@@ -1,9 +1,9 @@
 {
-  "name": "my-design-system",
+  "name": "acc-monorepo",
   "version": "1.0.0",
   "description": "a gatsby monorepo for acc",
   "main": "index.js",
-  "repository": "tbc-git",
+  "repository": "https://github.com/ACC-Ricky/acc-monorepo",
   "author": "Ricky H",
   "license": "MIT",
   "private": true,

@@ -1,14 +1,10 @@
-const activeEnv = process.env.ACTIVE_ENV | 'development'
-
-require('dotenv').config({
-  path: `.env.${activeEnv}`,
-})
+// TODO: add process.env.ACTIVE_ENV so that we can interlink repos
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Other Site`,
+    description: `yo`,
+    author: `@ACC-Ricky`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -21,6 +17,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

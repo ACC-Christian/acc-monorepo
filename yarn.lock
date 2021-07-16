@@ -18839,6 +18839,11 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.12.0.tgz#e1f1b7e1a59b6083b2596a8d067f6ee88fd4d3cf"
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
 
+stories@^1.0.0:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/stories/-/stories-1.0.5.tgz#d6db02994a4489a4db895d93c6219c4b26733ff4"
+  integrity sha1-1tsCmUpEiaTbiV2TxiGcSyZzP/Q=
+
 storybook-addon-outline@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/storybook-addon-outline/-/storybook-addon-outline-1.4.1.tgz#0a1b262b9c65df43fc63308a1fdbd4283c3d9458"

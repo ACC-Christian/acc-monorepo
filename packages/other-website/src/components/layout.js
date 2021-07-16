@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 // import Header from "./header"
 import "./layout.css"
-import { Header } from "stories/header/Header";
+import { Header } from "@acc-monorepo/stories/header/Header";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
 
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`}  buttonLabelOne="Do you like my Button?" buttonLabelTwo="Yes"/>
       <div
         style={{
           margin: `0 auto`,

@@ -27,7 +27,7 @@ const IndexPage = ( { data } ) => (
             <p>Welcome to your new Gatsby site.</p>
             <p>Now go build something great.</p>
 
-            <a href={`http://${process.env.OTHERPROJECT_URL}`}>Go to OTHER</a>
+            {/*TODO: <a href={`http://${process.env.OTHERPROJECT_URL}`}>Go to OTHER</a>*/}
 
             <StaticImage
                 src="../content/images/gatsby-astronaut.png"
@@ -42,7 +42,7 @@ const IndexPage = ( { data } ) => (
                 <Button label="this is a button"/>
                 {/*<AcademicImprovement bodyCopy={data.markdownRemark.html}/>*/}
                 <AcademicImprovement bodyCopy={data.academicImprovementContent.body} sideImage={data.academicImprovementImage.childImageSharp.gatsbyImageData}/>
-                <Cta mainText="this is written in the pages" buttonLabel="click here now"/>
+                <Cta mainText="this is written in the index.js" buttonLabel="text is defined in index.js"/>
               <Link to="/page-2/">Go to page 2</Link> <br/>
               <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
             </span>
