@@ -1,0 +1,10 @@
+.TextOnTheLeft .text,
+.TextOnTheRight .image
+{
+    order: 1;
+}
+
+.TextOnTheRight .image,
+.TextOnTheLeft .text{
+    order: 2;
+}

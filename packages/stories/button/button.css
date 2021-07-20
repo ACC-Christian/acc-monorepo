@@ -8,10 +8,10 @@
   border-radius: 5px;
   /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
   box-sizing: border-box;
-  padding: 15px 30px;
+  padding: 1.2rem 1.5rem;
   color: #fff;
-  font-size: 1.4rem;
-  font-weight: 600;
+  /*font-size: 1.4rem;*/
+  font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
   overflow: hidden;
@@ -20,14 +20,18 @@
   transition: all 100ms ease-in-out;
 }
 
-.storybook-button:hover {
-  padding: 20px 35px;
-  border-radius: 7px;
-  margin: -5px;
-  /*font-size: 1.2rem;*/
-  transition: all 100ms ease-in-out;
+.storybook-button:hover { /*font-size: 1.2rem;*/
+  opacity: .8;
+  animation: 3ms ease;
+  transition: all 3ms ease-in-out;
 }
 
+button + button {
+  margin-top: 10px;
+}
+
+
+/* ------ Storybook button styles ------ */
 .storybook-button--primary {
   color: white;
   background-color: #0069B4;
@@ -38,14 +42,14 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
 .storybook-button--small {
-  font-size: 12px;
+  font-size: .6rem;
   padding: 10px 16px;
 }
 .storybook-button--medium {
-  font-size: 14px;
+  font-size: .9rem;
   padding: 11px 20px;
 }
 .storybook-button--large {
-  font-size: 16px;
-  padding: 12px 24px;
+  font-size: .9rem;
+  padding: 1.2rem 1.5rem;
 }
