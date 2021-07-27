@@ -4,11 +4,12 @@ import PropTypes from 'prop-types';
 import { Button } from '../button/Button';
 import { AccLogo } from '../AccLogo/AccLogo';
 import './header.css';
+import '../sharedStyle.css';
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount, buttonLabelOne, buttonLabelTwo }) => (
+export const Header = ({ bcampus, user, onLogin, onLogout, onCreateAccount, buttonLabelOne, buttonLabelTwo }) => (
   <header>
-    <div className="wrapper">
-      <AccLogo campus={'Singleton'} />
+    <div className="wrapper padding2">
+      <AccLogo campus={bcampus} />
       <div>
         <Button primary size="large" label={buttonLabelOne} />
         <Button secondary size="large" label={buttonLabelTwo} />

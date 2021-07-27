@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Singleton Primary &amp; High School | Australian Christian College`,
+    campus: `singleton`,
     description: `holla`,
     author: `@ACC-Ricky`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,

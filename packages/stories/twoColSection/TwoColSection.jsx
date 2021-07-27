@@ -44,7 +44,7 @@ const Columns = styled.div`
 
 export const TwoColSection = ({ color, campus, bodyCopy, sideImage, layout }) => (
     <>
-        <section id="academic-improvement" className={['first-content-block start-cell inner-container', `${layout}`].join(' ')}>
+        <section className={['TwoColSection first-content-block start-cell inner-container', `${layout}`].join(' ')}>
             <Columns>
                 <div className="text">
                     <MDXRenderer>{bodyCopy}</MDXRenderer>
