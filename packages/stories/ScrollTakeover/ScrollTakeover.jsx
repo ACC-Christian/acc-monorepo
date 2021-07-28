@@ -3,10 +3,10 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import './cta.css'
+import './ScrollTakeover.css'
 import { Button } from '../button/Button'
 
-export const Cta = ({ color, campus, mainText, label, buttonLabel }) => (
+export const ScrollTakeover = ({ color, campus, mainText, label, buttonLabel }) => (
 <>
     <div className="ctaContainer" id="CTA">
         <div id="expanding_cta" className="cta-highlightable cta-highlight">
@@ -32,7 +32,7 @@ export const Cta = ({ color, campus, mainText, label, buttonLabel }) => (
 </>
 );
 
-Cta.defaultProps = {
+ScrollTakeover.defaultProps = {
     user: null,
     mainText: 'Discover how we would nurture your child\'s potential, personality and passion.',
     buttonLabel: 'this is the default label'

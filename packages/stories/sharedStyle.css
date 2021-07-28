@@ -42,6 +42,14 @@ summary {
     display: block;
 }
 
+/* --------------- COLORS ---------------*/
+:root {
+    --lightblue: #3eb0ef;
+    --darkblue: #2A333C;
+    --lightgrey: #c5d2d9;
+    --midgrey: rgb(65, 75, 86);
+}
+
 /* ---------------CONTAINERS and divs blocks etc---------------*/
 .wrapper{
     max-width: 1000px;
@@ -367,17 +375,34 @@ hgroup {
     margin-bottom: 1.45rem;
 }
 ul {
-    margin-left: 1.45rem;
     margin-right: 0;
     margin-top: 0;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
     list-style-position: outside;
     list-style-image: none;
 }
+
+ul.list {
+    list-style-type: none;
+    padding: 0;
+    color: var(--lightgrey);
+}
+
+ul.list li{padding: 0;}
+
+ul.list a {
+    font-size: inherit;
+    margin: 0;
+    color: inherit;
+}
+
+ul.list a:hover{
+    color: var(--midgrey);
+}
+
 ol {
     margin-left: 1.45rem;
     margin-right: 0;

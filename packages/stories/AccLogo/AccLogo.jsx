@@ -46,7 +46,7 @@ const TextWrapper = styled.span`
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-evenly;
-    font-size: 66%;
+    font-size: .85vw;
 
 
     

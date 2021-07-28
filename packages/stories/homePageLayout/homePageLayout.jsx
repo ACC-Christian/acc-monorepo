@@ -12,7 +12,7 @@ import { Header } from '../header/Header';
 import { Footer } from '../footer/Footer';
 import "./homePageLayout.css"
 
-export const HomePageLayout = ({ acampus, title, children, user, onLogin, onLogout, onCreateAccount }) => (
+export const HomePageLayout = ({ BlogPosts, acampus, title, children, user, onLogin, onLogout, onCreateAccount }) => (
     <>
         <Header siteTitle={title}  bcampus={acampus} buttonLabelOne="click here now" buttonLabelTwo="Dont click this!"/>
         <div
@@ -21,7 +21,7 @@ export const HomePageLayout = ({ acampus, title, children, user, onLogin, onLogo
         }}
         >
             <main>{children}</main>
-        <Footer />
+        <Footer bcampus={acampus} color="#fff" blogItems={BlogPosts}/>
     </div>
 </>
 );

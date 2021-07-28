@@ -4,7 +4,7 @@ module.exports = {
     campus: `singleton`,
     description: `holla`,
     author: `@ACC-Ricky`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://www.acc.edu.au/singleton`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,6 +30,20 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/content/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://www.acc.edu.au/blog/rss.xml`,
+        name: `ACCBlog`,
+        // Optional
+        // Read parser document: https://github.com/bobby-brennan/rss-parser#readme
+        parserOption: {
+          customFields: {
+            item: ['itunes:duration']
+          }
+        }
+      }
     },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
