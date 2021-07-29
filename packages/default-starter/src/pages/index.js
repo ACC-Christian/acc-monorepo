@@ -16,6 +16,10 @@ import { Button } from "@acc-monorepo/stories/button/Button";
 import { ScrollTakeover } from "@acc-monorepo/stories/ScrollTakeover/ScrollTakeover"
 import { TwoColSection } from "@acc-monorepo/stories/twoColSection/TwoColSection"
 import { HomePageLayout } from "@acc-monorepo/stories/homePageLayout/homePageLayout"
+import { PromotionalWidget } from "@acc-monorepo/stories/promotionalWidget/PromotionalWidget"
+import TermDates from '../content/termDates'
+import ContactInfo from '../content/contactInfo'
+import PoliciesList from '../content/policiesList'
 
 // export default function IndexPage({ data }) {
 // const IndexPage = ( { data } ) => (
@@ -28,38 +32,55 @@ class IndexPage extends React.Component {
         return (
 // const pic = data.academicImprovementImage.gatsbyImageData
             <HomePageLayout
-                acampus={data.site.siteMetadata?.campus}
+                campus={data.site.siteMetadata?.campus}
                 title={data.site.siteMetadata?.title || `This is manually written on index page`}
-                BlogPosts={data.blogitems}
+                blogPosts={data.blogPosts}
+                podcastEpisodes={data.podcastEpisodes}
+                TermDates={TermDates}
+                ContactInfo={ContactInfo}
+                PoliciesList={PoliciesList}
             >
                 <div className="wrapper">
                     <Seo title="XYZa"/>
                 </div>
+                <PromotionalWidget
+                    url="https://www.acc.edu.au/singleton/kindergarten.html"
+                    title={<>Kindy Explore<br /> Morning 2022</>}
+                    content="Please attend out Kindy Explore Morning on Wednesday 4th August"
+                    buttonText="REGISTER NOW"
+                />
                 <span>
-                {/*<AcademicImprovement bodyCopy={data.markdownRemark.html}/>*/}
-                    <TwoColSection layout="TextOnTheLeft" bodyCopy={data.academicImprovementContent.body}
-                                   sideImage={data.academicImprovementImage.childImageSharp.gatsbyImageData}/>
-                <TwoColSection layout="TextOnTheRight" bodyCopy={data.characterFormationContent.body}
-                               sideImage={data.characterFormationImage.childImageSharp.gatsbyImageData}/>
-                <section className="FullWidthSection">
-                    <div className="wrapper padding2">
-                        <div className="col-12"><h2>TEACHING TEAM</h2><h3>Our teachers engage</h3><p className="intro">Our teachers value relationships with parents and students.</p><p
-                            className="intro">They are highly professional and seek to continually improve their teaching.</p>
-                            <Button
-                                primary
-                                size="large"
-                                href="https://www.acc.edu.au/singleton/meet-our-teachers.html"
-                                label="MEET OUR TEACHERS"/>
+                    <TwoColSection
+                        layout="TextOnTheLeft" bodyCopy={data.academicImprovementContent.body}
+                        sideImage={data.academicImprovementImage.childImageSharp.gatsbyImageData}
+                    />
+                    <TwoColSection
+                        layout="TextOnTheRight"
+                        bodyCopy={data.characterFormationContent.body}
+                        sideImage={data.characterFormationImage.childImageSharp.gatsbyImageData}
+                    />
+                    <section className="FullWidthSection">
+                        <div className="wrapper padding2">
+                            <div className="col-12"><h2>TEACHING TEAM</h2><h3>Our teachers engage</h3><p className="intro">Our teachers value relationships with parents and students.</p><p
+                                className="intro">They are highly professional and seek to continually improve their teaching.</p>
+                                <Button
+                                    primary
+                                    size="large"
+                                    href="https://www.acc.edu.au/singleton/meet-our-teachers.html"
+                                    label="MEET OUR TEACHERS"/>
+                            </div>
                         </div>
-                    </div>
-                    <GatsbyImage style={{paddingTop: `-3erm`}}
-                                 image={data.teachingTeamImage.childImageSharp.gatsbyImageData} alt="ACC Image"/>
-                </section>
-                <ScrollTakeover mainText="this is written in the index.js" buttonLabel="text is defined in index.js"/>
-              <Link to="/page-2/">Go to page 2</Link> <br/>
-              <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-                
-            </span>
+                        <GatsbyImage
+                            style={{paddingTop: `-3erm`}}
+                            image={data.teachingTeamImage.childImageSharp.gatsbyImageData}
+                            alt="ACC Image"
+                        />
+                    </section>
+                    <ScrollTakeover
+                        mainText="this is written in the index.js"
+                        buttonLabel="text is defined in index.js"
+                    />
+                </span>
             </HomePageLayout>
         )
     }
@@ -111,7 +132,16 @@ export const query = graphql`
           )
         }
       }
-      blogitems: allFeedAccBlog(limit: 9) {
+        blogPosts: allFeedAccBlog(limit: 9) {
+            edges {
+              node {
+                title
+                link
+                id
+              }
+            }
+        }
+        podcastEpisodes: allFeedAccPodcast(limit: 9) {
             edges {
               node {
                 title

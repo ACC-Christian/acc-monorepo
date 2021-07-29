@@ -12,48 +12,27 @@ import { Header } from '../header/Header';
 import { Footer } from '../footer/Footer';
 import "./homePageLayout.css"
 
-export const HomePageLayout = ({ BlogPosts, acampus, title, children, user, onLogin, onLogout, onCreateAccount }) => (
+export const HomePageLayout = ({ campus, title, children, user, onLogin, onLogout, onCreateAccount, blogPosts, podcastEpisodes, TermDates, ContactInfo, PoliciesList }) => (
     <>
-        <Header siteTitle={title}  bcampus={acampus} buttonLabelOne="click here now" buttonLabelTwo="Dont click this!"/>
-        <div
-        style={{
-         margin: `0 auto`,
-        }}
-        >
+        <Header 
+            siteTitle={title}  
+            campus={campus}
+            buttonLabelOne="click here now" 
+            buttonLabelTwo="Dont click this!"
+        />
+        <div>
             <main>{children}</main>
-        <Footer bcampus={acampus} color="#fff" blogItems={BlogPosts}/>
-    </div>
-</>
+            <Footer
+                campus={campus}
+                color="#fff"
+                blogPosts={blogPosts}
+                podcastEpisodes={podcastEpisodes}
+                TermDates={TermDates}
+                ContactInfo={ContactInfo}
+                PoliciesList={PoliciesList}
+            />
+        </div>
+    </>
 );
-// --
-// const HomePageLayout = ({ title, children, user, onLogin, onLogout, onCreateAccount }) => {
-//
-//     return (
-//         <>
-//             <Header siteTitle={title}  buttonLabelOne="click here now" buttonLabelTwo="Dont click this!"/>
-//             <div
-//                 style={{
-//                     margin: `0 auto`,
-//                 }}
-//             >
-//                 <main>{children}</main>
-//                 <footer
-//                     style={{
-//                         marginTop: `2rem`,
-//                     }}
-//                 >
-//                     © {new Date().getFullYear()}, Built with
-//                     {` `}
-//                     <a href="https://www.gatsbyjs.com">Gatsby</a>
-//                 </footer>
-//             </div>
-//         </>
-//     )
-// }
-//
-// // Layout.propTypes = {
-// //     children: PropTypes.node.isRequired,
-// // }
-//
-// export default HomePageLayout
+
 

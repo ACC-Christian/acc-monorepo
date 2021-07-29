@@ -5,12 +5,12 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = ({ primary, backgroundColor, size, label, position, ...props }) => {
+  const mode = primary ? 'primary' : 'secondary';
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={['storybook-button', `${size}`, `position-${position}`, mode].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
@@ -40,6 +40,10 @@ Button.propTypes = {
    * Optional click handler
    */
   onClick: PropTypes.func,
+  /**
+   * Where should the button be positioned
+   */
+  position: PropTypes.oneOf(['unset', 'left', 'center', 'right']),
 };
 
 Button.defaultProps = {
@@ -47,4 +51,5 @@ Button.defaultProps = {
   primary: false,
   size: 'medium',
   onClick: undefined,
+  position: 'unset',
 };

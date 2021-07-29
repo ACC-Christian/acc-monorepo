@@ -1,0 +1,198 @@
+
+/* ==================Promo Featured Banner/Badge on Homepage ----------------- */
+
+
+.PromotionalWidget{
+    visibility: visible;
+    margin: 1rem 1rem 3rem 1rem;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    position: relative;
+    top: unset;
+    transform: unset;
+    left: 0;
+    right: 0;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 15px 3px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 15px 3px rgba(0,0,0,0.6);
+    z-index: 300;
+}
+
+a:hover .PromotionalWidget *, a .PromotionalWidget:hover *{ text-decoration: none; }
+
+.PromotionalWidget, .PromotionalWidget h2, .PromotionalWidget p{
+    opacity: 1 !important;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-delay: 80ms;
+}
+
+/* THIS IS the HIDE close button in the corner */
+@media(max-width: 767px){
+    .PromotionalWidget button.hide-promo {
+        display: none;
+    }
+}
+
+/* -- this actually isnt the hide button, its the chevron for mobile - oops */
+
+.PromotionalWidget button.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 43px;
+    height: 31px;
+    color: #0069b4;
+    padding: 0 9px 9px 9px;
+    line-height: 17px;
+    background-color: #fff;
+    border-radius: 0 5px 0 5px;
+    border: transparent;
+}
+
+.PromotionalWidget .icon{
+    width: 25%;
+    padding: .5rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    border-radius: 5px 0 0 5px;
+}
+
+
+.PromotionalWidget .icon svg {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: -webkit-inline-box;
+}
+
+.PromotionalWidget .text{
+    width: 75%;
+    margin: 0;
+    padding: 1.5rem 2rem;
+    text-align: left;
+    border-radius: 0 5px 5px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+    .PromotionalWidget .text h2{
+        line-height: 1.3rem;
+        font-size: 1rem;
+        margin: 0 0 5px 0;
+    }
+    .PromotionalWidget .text p{
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: auto;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    .PromotionalWidget button{
+        margin-top: 1rem;
+        text-align: center;
+        display: block;
+    }
+
+
+@media (min-width: 576px) {
+    .PromotionalWidget .text h2 {
+        line-height: 1.8rem;
+        font-size: 1.5rem;
+    }
+    .PromotionalWidget .text p {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .PromotionalWidget {
+        position: absolute;
+        text-align: center;
+        margin: 2rem;
+        width: 15rem;
+        bottom: 0;
+        top: unset;
+        transform: unset;
+        right: 0;
+        left: unset;
+        background-color: #fff;
+        border-radius: 5px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .PromotionalWidget button.hide-promo {
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        line-height: 2rem;
+        color: #023e88;
+    }
+
+    .PromotionalWidget button.close{display: none;}
+
+    .PromotionalWidget .icon {
+        width: 40%;
+        padding: .5rem;
+        margin: .2rem auto .1rem auto;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 0;
+    }
+
+    .PromotionalWidget .text {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 0 5px 5px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .PromotionalWidget .text h2 {
+        color: #000;
+        line-height: 1.3rem;
+        font-size: 1.1rem;
+        margin-bottom: .4rem;
+    }
+    .PromotionalWidget .text p {
+        color: #646e78;
+        margin: auto;
+        width: 80%;
+        font-size: .8rem;
+        margin-bottom: unset;
+        line-height: 1.15rem;
+    }
+
+    .PromotionalWidget button.btn.cta-main.no-mobile {
+        width: auto;
+        min-width: unset;
+        font-size: .65rem;
+        padding: .9rem 1rem;
+        margin: 1rem;
+
+    }
+
+}

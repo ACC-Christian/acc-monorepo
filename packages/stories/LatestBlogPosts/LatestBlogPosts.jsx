@@ -33,14 +33,13 @@ const List = styled.ul`
           }
       }
     }
-   
 `
 
-export const LatestBlogPosts = ({ blogs }) => (
+export const LatestBlogPosts = ({ blogPosts }) => (
     <Wrapper>
-        <Heading2>Latest Blog Postsss</Heading2>
+        <Heading2><a href="https://www.acc.edu.au/blog/" target="_blank">Latest Blog Posts</a></Heading2>
         <List>
-            {blogs.edges.map(({ node }) => {
+            {blogPosts.edges.map(({ node }) => {
                 return (
                     <li key={node.id}>
                         <a href={node.link}>{node.title}</a>
@@ -48,6 +47,7 @@ export const LatestBlogPosts = ({ blogs }) => (
                 )
             })}
         </List>
+        <p><a href="https://www.acc.edu.au/blog/">See more articles</a></p>
     </Wrapper>
 );
 

@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Singleton Primary &amp; High School | Australian Christian College`,
     campus: `singleton`,
     description: `holla`,
     author: `@ACC-Ricky`,
     siteUrl: `https://www.acc.edu.au/singleton`,
+    facebookUrl: 'https://www.facebook.com/ACCSingleton/',
+    youtubeUrl: 'https://www.youtube.com/user/WatchACCSING',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -36,6 +37,15 @@ module.exports = {
       options: {
         url: `https://www.acc.edu.au/blog/rss.xml`,
         name: `ACCBlog`,
+        // Optional
+        // Read parser document: https://github.com/bobby-brennan/rss-parser#readme
+      }
+    },
+    {
+      resolve: `gatsby-source-rss-feed`,
+      options: {
+        url: `https://www.acc.edu.au/podcast/rss.xml`,
+        name: `ACCPodcast`,
         // Optional
         // Read parser document: https://github.com/bobby-brennan/rss-parser#readme
         parserOption: {
