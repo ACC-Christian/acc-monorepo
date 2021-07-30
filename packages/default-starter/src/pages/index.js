@@ -55,7 +55,8 @@ class IndexPage extends React.Component {
                 />
                 <span>
                     <TwoColSection
-                        layout="TextOnTheLeft" bodyCopy={data.academicImprovementContent.body}
+                        layout="TextOnTheLeft" 
+                        bodyCopy={data.academicImprovementContent.body}
                         sideImage={data.academicImprovementImage.childImageSharp.gatsbyImageData}
                     />
                     <TwoColSection
