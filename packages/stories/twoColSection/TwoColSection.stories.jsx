@@ -5,7 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
 // import content from './placeholder.md';
-import photo from './characterFormation.jpg';
+import photo from './placeholder.jpg';
 import content from './placeholder.md';
 
 const Columns = styled.div`

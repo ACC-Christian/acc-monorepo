@@ -1,0 +1,33 @@
+.homeTopSection{
+    width: 100%;
+    height: 100vw;
+    position: relative;
+}
+
+.homeTopSection .content{
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3rem;
+
+    z-index: 50;
+}
+
+.homeTopSection .background-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -96px;
+    left: 0;
+}
+
+.homeTopSection p{
+    color: #fff;
+    text-shadow: 0 0 3em #fcf3dd;
+    font-size: 1.2rem;
+}

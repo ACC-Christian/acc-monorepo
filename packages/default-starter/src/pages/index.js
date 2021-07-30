@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 // import PropTypes from "prop-types"
 
@@ -17,6 +16,7 @@ import { ScrollTakeover } from "@acc-monorepo/stories/ScrollTakeover/ScrollTakeo
 import { TwoColSection } from "@acc-monorepo/stories/twoColSection/TwoColSection"
 import { HomePageLayout } from "@acc-monorepo/stories/homePageLayout/homePageLayout"
 import { PromotionalWidget } from "@acc-monorepo/stories/promotionalWidget/PromotionalWidget"
+import { HomeTopSection } from "@acc-monorepo/stories/homeTopSection/HomeTopSection"
 import TermDates from '../content/termDates'
 import ContactInfo from '../content/contactInfo'
 import PoliciesList from '../content/policiesList'
@@ -48,6 +48,10 @@ class IndexPage extends React.Component {
                     title={<>Kindy Explore<br /> Morning 2022</>}
                     content="Please attend out Kindy Explore Morning on Wednesday 4th August"
                     buttonText="REGISTER NOW"
+                />
+                <HomeTopSection
+                    bodyCopy={data.topSectionContent.body}
+                    backgroundImage={data.topSectionImage.childImageSharp.gatsbyImageData}
                 />
                 <span>
                     <TwoColSection
@@ -95,6 +99,18 @@ export const query = graphql`
           title
           campus
         }
+      }
+      topSectionImage:  file(publicURL: {regex: "/singleton-feature-section.jpg/"}) {
+        childImageSharp {
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+      }
+      topSectionContent: mdx(fileAbsolutePath: {regex: "/homeTopSection.mdx/"}) {
+        body
       }
       academicImprovementContent: mdx(headings: {elemMatch: {value: {eq: "ACADEMIC IMPROVEMENT"}}}) {
         body

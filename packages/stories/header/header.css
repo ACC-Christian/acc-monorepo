@@ -1,9 +1,15 @@
+header{
+  z-index: 999;
+  position: relative;
+}
+
 header .wrapper {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: unset;
+  height: 100px;
 }
 
 svg {
