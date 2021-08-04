@@ -5,8 +5,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './ScrollTakeover.css'
 import { Button } from '../button/Button'
+import { FloatingRepuso } from "../Repuso/FloatingRepuso"
 
-export const ScrollTakeover = ({ color, campus, mainText, label, buttonLabel }) => (
+export const ScrollTakeover = ({ color, campus, mainText, label, buttonLabel, repusoReference }) => (
 <>
     <div className="ctaContainer" id="CTA">
         <div id="expanding_cta" className="cta-highlightable cta-highlight">
@@ -20,8 +21,7 @@ export const ScrollTakeover = ({ color, campus, mainText, label, buttonLabel }) 
                         <Button primary size="large" href={`https://www.acc.edu.au/${campus}/principals-tour.html`} label={buttonLabel} />
 
                         <div className="reviews">
-                            <div data-rw-badge1="21608"></div>
-
+                            <FloatingRepuso repusoReference={repusoReference} />
                         </div>
                     </div>
                 </div>

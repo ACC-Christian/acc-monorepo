@@ -17,6 +17,8 @@ import { TwoColSection } from "@acc-monorepo/stories/twoColSection/TwoColSection
 import { HomePageLayout } from "@acc-monorepo/stories/homePageLayout/homePageLayout"
 import { PromotionalWidget } from "@acc-monorepo/stories/promotionalWidget/PromotionalWidget"
 import { HomeTopSection } from "@acc-monorepo/stories/homeTopSection/HomeTopSection"
+import { FlashRepuso } from "@acc-monorepo/stories/Repuso/FlashRepuso"
+import { GridRepuso } from "@acc-monorepo/stories/Repuso/GridRepuso"
 import TermDates from '../content/termDates'
 import ContactInfo from '../content/contactInfo'
 import PoliciesList from '../content/policiesList'
@@ -53,39 +55,44 @@ class IndexPage extends React.Component {
                     bodyCopy={data.topSectionContent.body}
                     backgroundImage={data.topSectionImage.childImageSharp.gatsbyImageData}
                 />
-                <span>
-                    <TwoColSection
-                        layout="TextOnTheLeft" 
-                        bodyCopy={data.academicImprovementContent.body}
-                        sideImage={data.academicImprovementImage.childImageSharp.gatsbyImageData}
-                    />
-                    <TwoColSection
-                        layout="TextOnTheRight"
-                        bodyCopy={data.characterFormationContent.body}
-                        sideImage={data.characterFormationImage.childImageSharp.gatsbyImageData}
-                    />
-                    <section className="FullWidthSection">
-                        <div className="wrapper padding2">
-                            <div className="col-12"><h2>TEACHING TEAM</h2><h3>Our teachers engage</h3><p className="intro">Our teachers value relationships with parents and students.</p><p
-                                className="intro">They are highly professional and seek to continually improve their teaching.</p>
-                                <Button
-                                    primary
-                                    size="large"
-                                    href="https://www.acc.edu.au/singleton/meet-our-teachers.html"
-                                    label="MEET OUR TEACHERS"/>
-                            </div>
+                <TwoColSection
+                    layout="TextOnTheLeft"
+                    bodyCopy={data.academicImprovementContent.body}
+                    sideImage={data.academicImprovementImage.childImageSharp.gatsbyImageData}
+                />
+                <section className="FullWidthSection">
+                    <h2>Parent Reviews</h2>
+                    <GridRepuso repusoReference="11241" />
+                </section>
+                <TwoColSection
+                    layout="TextOnTheRight"
+                    bodyCopy={data.characterFormationContent.body}
+                    sideImage={data.characterFormationImage.childImageSharp.gatsbyImageData}
+                />
+
+                <FlashRepuso repusoReference="20699" />
+                <section className="FullWidthSection">
+                    <div className="wrapper padding2">
+                        <div className="col-12"><h2>TEACHING TEAM</h2><h3>Our teachers engage</h3><p className="intro">Our teachers value relationships with parents and students.</p><p
+                            className="intro">They are highly professional and seek to continually improve their teaching.</p>
+                            <Button
+                                primary
+                                size="large"
+                                href="https://www.acc.edu.au/singleton/meet-our-teachers.html"
+                                label="MEET OUR TEACHERS"/>
                         </div>
-                        <GatsbyImage
-                            style={{paddingTop: `-3erm`}}
-                            image={data.teachingTeamImage.childImageSharp.gatsbyImageData}
-                            alt="ACC Image"
-                        />
-                    </section>
-                    <ScrollTakeover
-                        mainText="this is written in the index.js"
-                        buttonLabel="text is defined in index.js"
+                    </div>
+                    <GatsbyImage
+                        style={{paddingTop: `-3erm`}}
+                        image={data.teachingTeamImage.childImageSharp.gatsbyImageData}
+                        alt="ACC Image"
                     />
-                </span>
+                </section>
+                <ScrollTakeover
+                    mainText="this is written in the index.js"
+                    buttonLabel="text is defined in index.js"
+                    repusoReference="21608"
+                />
             </HomePageLayout>
         )
     }

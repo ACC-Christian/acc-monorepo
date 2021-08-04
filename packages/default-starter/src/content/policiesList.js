@@ -31,11 +31,13 @@ const PoliciesList = () => (
             </li>
             <li>
                 <a href="https://drive.google.com/file/d/1sHwotiC_r0VIeuOGSw4APXq5z2YsrpIG/view"
-                   target="_blank" rel="nofollow noopener">Position on Marriage & Sexuality</a>
+                   target="_blank"
+                   rel="noreferrer">Position on Marriage & Sexuality</a>
             </li>
             <li>
                 <a href="https://drive.google.com/file/d/14crL7SRRr_DvyiQnvM1b45Jhkbl-P1UO/edit"
-                   target="_blank" rel="nofollow noopener">Statement of Faith</a>
+                   target="_blank"
+                   rel="noreferrer">Statement of Faith</a>
             </li>
         </ul>
     </>
