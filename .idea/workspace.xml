@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ebf38e2-38cb-428d-94e6-25fd157de87f" name="Default Changelist" comment="added home top feature section">
-      <change afterPath="$PROJECT_DIR$/packages/stories/Repuso/FlashRepuso.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/stories/Repuso/FloatingRepuso.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/stories/Repuso/FloatingRepuso.stories.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/stories/Repuso/GridRepuso.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/stories/Repuso/Repuso.css" afterDir="false" />
+    <list default="true" id="6ebf38e2-38cb-428d-94e6-25fd157de87f" name="Default Changelist" comment="added repuso widgets&#10;other bug fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/default-starter/src/content/policiesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/default-starter/src/content/policiesList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/default-starter/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/default-starter/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/stories/Repuso/FlashRepuso.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/Repuso/FlashRepuso.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/stories/Repuso/FloatingRepuso.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/Repuso/FloatingRepuso.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/stories/Repuso/GridRepuso.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/Repuso/GridRepuso.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/stories/ScrollTakeover/ScrollTakeover.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/ScrollTakeover/ScrollTakeover.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/footer/Footer.stories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/footer/Footer.stories.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/schoolList/SchoolList.stories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/schoolList/SchoolList.stories.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/sharedStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/sharedStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/stories/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/footer/Footer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627604723434</updated>
-      <workItem from="1627604724860" duration="12232000" />
+      <workItem from="1627604724860" duration="21818000" />
     </task>
     <task id="LOCAL-00001" summary="added home top feature section">
       <created>1627621336330</created>
@@ -73,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627621336330</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added repuso widgets&#10;other bug fixes">
+      <created>1628053962701</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628053962701</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,7 +107,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added home top feature section" />
-    <option name="LAST_COMMIT_MESSAGE" value="added home top feature section" />
+    <MESSAGE value="added repuso widgets&#10;other bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added repuso widgets&#10;other bug fixes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

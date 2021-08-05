@@ -70,7 +70,7 @@ class IndexPage extends React.Component {
                     sideImage={data.characterFormationImage.childImageSharp.gatsbyImageData}
                 />
 
-                <FlashRepuso repusoReference="20699" />
+                {/*<FlashRepuso repusoReference="20699" />*/}
                 <section className="FullWidthSection">
                     <div className="wrapper padding2">
                         <div className="col-12"><h2>TEACHING TEAM</h2><h3>Our teachers engage</h3><p className="intro">Our teachers value relationships with parents and students.</p><p

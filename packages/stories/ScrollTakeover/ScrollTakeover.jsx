@@ -21,7 +21,7 @@ export const ScrollTakeover = ({ color, campus, mainText, label, buttonLabel, re
                         <Button primary size="large" href={`https://www.acc.edu.au/${campus}/principals-tour.html`} label={buttonLabel} />
 
                         <div className="reviews">
-                            <FloatingRepuso repusoReference={repusoReference} />
+                            {/*<FloatingRepuso repusoReference={repusoReference} />*/}
                         </div>
                     </div>
                 </div>

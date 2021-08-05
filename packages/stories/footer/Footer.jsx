@@ -119,7 +119,7 @@ export const Footer = ({
                             color="white"
                             href="https://www.acc.edu.au/careers/"
                             target="_blank"
-                            label="CAREERS"
+                            label="careers"
                         />
                         <Button
                             secondary
