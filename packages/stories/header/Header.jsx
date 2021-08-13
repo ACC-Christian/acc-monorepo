@@ -9,7 +9,7 @@ import '../sharedStyle.css';
 export const Header = ({ bcampus, user, onLogin, onLogout, onCreateAccount, buttonLabelOne, buttonLabelTwo }) => (
   <header>
     <div className="wrapper padding2">
-      <AccLogo campus={bcampus} />
+      {/*<AccLogo campus={bcampus} />*/}
       <div>
         <Button primary size="large" label={buttonLabelOne} />
         <Button secondary size="large" label={buttonLabelTwo} />

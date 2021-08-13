@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   font-family: montserrat,arial,sans-serif;
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
     flex-direction: row;
     text-decoration: none;
   }
-`
+`;
 
 
 const Shield = styled.svg`

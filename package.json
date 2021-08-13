@@ -23,7 +23,7 @@
     "gatsby-source-filesystem": "^3.9.0",
     "gatsby-transformer-sharp": "^3.9.0",
     "prop-types": "^15.7.2",
-    "react-dom": "^17.0.1",
+    "react-dom": "^16.8.0",
     "react-helmet": "^6.1.0",
     "@babel/core": "^7.14.6",
     "@storybook/addon-actions": "^6.3.6",
@@ -36,7 +36,6 @@
     "jest": "^27.0.6",
     "lerna": "^4.0.0",
     "storybook": "^6.3.6",
-    "gatsby-plugin-styled-components": "^3.3.14",
     "eslint": "^7.24.0",
     "eslint-webpack-plugin": "^2.5.3",
     "gatsby-plugin-eslint": "^3.0.0"
@@ -51,7 +50,9 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^ 16.8.0",
+    "react-dom": "^16.8.0",
+    "styled-components": "^5.3.0",
+    "gatsby-plugin-styled-components": "^4.11.0"
   }
 }

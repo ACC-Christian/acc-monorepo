@@ -53,7 +53,7 @@ export const Footer = ({
                 <div className="container">
                     <div className="column">
                         <div className="logo">
-                            <AccLogo campus={campus} color={'#fff'} />
+                            {/*<AccLogo campus={campus} color={'#fff'} />*/}
                         </div>
 
                         <p><em>Transforming young lives spiritually, academically, socially and physically.</em></p>
@@ -81,7 +81,7 @@ export const Footer = ({
                                 )
                             })}
                         </List>
-                        <p><a href="https://www.acc.edu.au/podcast/">See more episodes</a></p>
+                        <p><a href="https://www.acc.edu.au/podcast/" target="_blank">See more episodes</a></p>
                     </div>
                     <div className="column">
                         <LatestBlogPosts blogPosts={blogPosts} />
@@ -101,12 +101,12 @@ export const Footer = ({
                     <div className="colspan2-desktop">
                         <div id="social-links" style={{ width: '50px' }}>
                             <div className="social-link facebook">
-                                <a href={facebookUrl} target="_blank" rel="noopener">
+                                <a href={facebookUrl} target="_blank" rel="noreferrer">
                                     <Facebook />
                                 </a>
                             </div>
                             <div className="social-link youtube">
-                                <a href={youtubeUrl} target="_blank" rel="noopener">
+                                <a href={youtubeUrl} target="_blank" rel="noreferrer">
                                     <Youtube />
                                 </a>
                             </div>
@@ -128,7 +128,7 @@ export const Footer = ({
                             color="white"
                             href={`https://sites.google.com/acc.edu.au/${campus}-resources/home`}
                             target="_blank"
-                            rel="noopener noreferrer"
+                            rel="noreferrer"
                             label={<span><span>PARENT</span>&nbsp;<span className="skinny">PORTAL</span></span>}
                         />
                     </div>

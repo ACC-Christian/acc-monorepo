@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-const Columns = styled.div`
+const ColumnsA = styled.div`
   display: flex;
   flex-direction: column;
   width: calc(100% - 2rem);
@@ -38,22 +38,23 @@ const Columns = styled.div`
       height: 100%;
     }
   }
-  
-  
 `
 
-export const TwoColSection = ({ color, campus, bodyCopy, sideImage, layout }) => (
-    <>
-        <section className={['TwoColSection first-content-block start-cell inner-container', `${layout}`].join(' ')}>
-            <Columns>
-                <div className="text">
-                    <MDXRenderer>{bodyCopy}</MDXRenderer>
-                </div>
-                <div className="side-image">
-                    <GatsbyImage image={sideImage} alt="ACC Image" />
-                </div>
-            </Columns>
-        </section>
-    </>
-);
+const TwoColSection = ({ color, campus, bodyCopy, sideImage, layout }) => {
+    return(
+        <>
+            <section className={['TwoColSection first-content-block start-cell inner-container', `${layout}`].join(' ')}>
+                <ColumnsA>
+                    <div className="text">
+                        <MDXRenderer>{bodyCopy}</MDXRenderer>
+                    </div>
+                    <div className="side-image">
+                        <GatsbyImage image={sideImage} alt="ACC Image" />
+                    </div>
+                </ColumnsA>
+            </section>
+        </>
+    )
 
+}
+export default TwoColSection
