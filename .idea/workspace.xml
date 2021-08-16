@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ebf38e2-38cb-428d-94e6-25fd157de87f" name="Default Changelist" comment="repuso grid works on develop but not build&#10;i am going to have a crack at instaling this https://github.com/gatsbyjs/gatsby/issues/15161" />
+    <list default="true" id="6ebf38e2-38cb-428d-94e6-25fd157de87f" name="Default Changelist" comment="fixed stylyed-components and repuso">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +67,7 @@
       <workItem from="1628656263056" duration="5751000" />
       <workItem from="1628727856620" duration="24070000" />
       <workItem from="1629069592571" duration="599000" />
+      <workItem from="1629072010635" duration="1063000" />
     </task>
     <task id="LOCAL-00001" summary="added home top feature section">
       <created>1627621336330</created>
@@ -80,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628053962701</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed stylyed-components and repuso">
+      <created>1629072350778</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629072350778</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +123,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added home top feature section" />
     <MESSAGE value="added repuso widgets&#10;other bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added repuso widgets&#10;other bug fixes" />
+    <MESSAGE value="fixed stylyed-components and repuso" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed stylyed-components and repuso" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
