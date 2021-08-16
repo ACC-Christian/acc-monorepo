@@ -21,22 +21,10 @@ import { HomeTopSection } from "@acc-monorepo/stories/homeTopSection/HomeTopSect
 import { FlashRepuso } from "@acc-monorepo/stories/Repuso/FlashRepuso"
 import { GridRepuso } from "@acc-monorepo/stories/Repuso/GridRepuso"
 
-
 import TermDates from '../content/termDates'
 import ContactInfo from '../content/contactInfo'
 import PoliciesList from '../content/policiesList'
-// import Script from 'react-load-script'
 
-
-const Whatever = styled.div`
-display: block;
-  position: fixed;
-  top: 0;
-left: 0;
-  width: 50%;
-  height: 500px;
-  background-color: pink;
-`
 class IndexPage extends React.Component {
 
     render() {
@@ -45,9 +33,6 @@ class IndexPage extends React.Component {
 
         return (
             <>
-                <Whatever>
-                    <p>this is text</p>
-                </Whatever>
                 <HomePageLayout
                     campus={data.site.siteMetadata?.campus}
                     title={data.site.siteMetadata?.title || `This is manually written on index page`}
@@ -83,7 +68,7 @@ class IndexPage extends React.Component {
                         {/*    onError={this.handleScriptError.bind(this)}*/}
                         {/*    onLoad={this.handleScriptLoad.bind(this)}*/}
                         {/*/>*/}
-                        {/*<GridRepuso repusoReference="11241" />*/}
+                        <GridRepuso repusoReference="11241" />
                     </section>
                     <TwoColSection
                         layout="TextOnTheRight"
@@ -91,7 +76,7 @@ class IndexPage extends React.Component {
                         sideImage={data.characterFormationImage.childImageSharp.gatsbyImageData}
                     />
 
-                    {/*<FlashRepuso repusoReference="20699" />*/}
+                    <FlashRepuso repusoReference="20699" />
                     <section className="FullWidthSection">
                         <div className="wrapper padding2">
                             <div className="col-12"><h2>TEACHING TEAM</h2><h3>Our teachers engage</h3><p className="intro">Our teachers value relationships with parents and students.</p><p
@@ -109,11 +94,11 @@ class IndexPage extends React.Component {
                             alt="ACC Image"
                         />
                     </section>
-                    {/*<ScrollTakeover*/}
-                    {/*    mainText="this is written in the index.js"*/}
-                    {/*    buttonLabel="text is defined in index.js"*/}
-                    {/*    repusoReference="21608"*/}
-                    {/*/>*/}
+                    <ScrollTakeover
+                        mainText="this is written in the index.js"
+                        buttonLabel="text is defined in index.js"
+                        repusoReference="21608"
+                    />
                 </HomePageLayout>
             </>
         )

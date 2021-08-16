@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ebf38e2-38cb-428d-94e6-25fd157de87f" name="Default Changelist" comment="repuso grid works on develop but not build&#10;i am going to have a crack at instaling this https://github.com/gatsbyjs/gatsby/issues/15161">
-      <change afterPath="$PROJECT_DIR$/packages/default-starter/src/components/GridRepusoLocal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/default-starter/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/default-starter/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/default-starter/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/default-starter/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/AccLogo/AccLogo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/AccLogo/AccLogo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/Repuso/FlashRepuso.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/Repuso/FlashRepuso.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/Repuso/FloatingRepuso.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/Repuso/FloatingRepuso.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/Repuso/GridRepuso.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/Repuso/GridRepuso.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/ScrollTakeover/ScrollTakeover.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/ScrollTakeover/ScrollTakeover.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/homePageLayout/homePageLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/homePageLayout/homePageLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/sharedStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/sharedStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/twoColSection/TwoColSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/twoColSection/TwoColSection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="6ebf38e2-38cb-428d-94e6-25fd157de87f" name="Default Changelist" comment="repuso grid works on develop but not build&#10;i am going to have a crack at instaling this https://github.com/gatsbyjs/gatsby/issues/15161" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +64,7 @@
       <workItem from="1627604724860" duration="21818000" />
       <workItem from="1628656263056" duration="5751000" />
       <workItem from="1628727856620" duration="24070000" />
+      <workItem from="1629069592571" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="added home top feature section">
       <created>1627621336330</created>
