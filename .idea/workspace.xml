@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6ebf38e2-38cb-428d-94e6-25fd157de87f" name="Default Changelist" comment="added repuso widgets&#10;other bug fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/default-starter/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/default-starter/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/Repuso/FlashRepuso.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/Repuso/FlashRepuso.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/Repuso/FloatingRepuso.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/Repuso/FloatingRepuso.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/Repuso/GridRepuso.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/Repuso/GridRepuso.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/ScrollTakeover/ScrollTakeover.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/ScrollTakeover/ScrollTakeover.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/stories/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/stories/footer/Footer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
